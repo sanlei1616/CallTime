@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CallTime</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="layout_calltime">CallTime</string>
+    <string name="sim1_calltime">"Sim1 Call Time(mins):"</string>
+    <string name="sim1_receivetime">"Sim1 Receive Time(mins):"</string>
+    <string name="sim2_calltime">"Sim2 Call Time(mins):"</string>
+    <string name="sim2_receivetime">"Sim2 Receive Time(mins):"</string>
+    <string name="call_time_default">"0"</string>
+    <string name="call_time_mins">"mins"</string>
+    <string name="layout_dataflow">"Data Flow"</string>
+    <string name="sim1_dataflow">"Sim1 Data Flow(M):"</string>
+    <string name="sim2_dataflow">"Sim2 Data Flow(M):"</string>
+    <string name="content_detail">"Detail"</string>
+</resources>

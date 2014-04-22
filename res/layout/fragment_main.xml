@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.calltime.MainActivity$PlaceholderFragment" >
+<LinearLayout 
+    android:id = "@+id/layout_calltime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_calltime" 
+        android:textSize="20sp"
+        android:layout_marginBottom="5dip"
+   />  
+
+  <RelativeLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >   
+  <TextView
+      android:id = "@+id/sim1_calltime"
+      android:text="@string/sim1_calltime" 
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim1_calltime_content"
+	  android:text="@string/call_time_default" 
+	  android:layout_below="@id/sim1_calltime"
+	  style="@style/CallTimeTextStyle"
+      />
+  <Button 
+      android:id = "@+id/sim1_calltime_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim1_calltime"      
+      />
+
+  <TextView
+      android:id = "@+id/sim1_receivetime"
+      android:text="@string/sim1_receivetime"
+      android:layout_below="@id/sim1_calltime_content"
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim1_receivetime_content"
+      android:text="@string/call_time_default"
+	  android:layout_below="@id/sim1_receivetime"
+	  style="@style/CallTimeTextStyle"
+	  />
+  <Button 
+      android:id = "@+id/sim1_receivtime_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim1_receivetime"       
+      />
+  <View  
+        android:id = "@+id/segmentation1"
+        android:layout_width="fill_parent"  
+    	android:layout_height="1px" 
+   		android:background="?android:attr/listDivider"  
+   		android:layout_below="@id/sim1_receivetime_content"
+	/>
+  <TextView
+      android:id = "@+id/sim2_calltime"
+      android:text="@string/sim2_calltime" 
+      android:layout_below="@id/sim1_receivetime_content"
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim2_calltime_content"
+	  android:text="@string/call_time_default" 
+	  android:layout_below="@id/sim2_calltime"
+	  style="@style/CallTimeTextStyle"
+      />
+<Button 
+      android:id = "@+id/sim2_calltime_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim2_calltime"          
+      />
+  <TextView
+      android:id = "@+id/sim2_receivetime"
+      android:text="@string/sim2_receivetime"
+      android:layout_below="@id/sim2_calltime_content"
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim2_receivetime_content"
+      android:text="@string/call_time_default"
+	  android:layout_below="@id/sim2_receivetime"
+	  style="@style/CallTimeTextStyle"
+	  />
+  <Button 
+      android:id = "@+id/sim2_receivtime_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim2_receivetime"      
+      />
+  <View  
+        android:id = "@+id/segmentation2"
+        android:layout_width="fill_parent"  
+    	android:layout_height="1px" 
+   		android:background="?android:attr/listDivider"  
+   		android:layout_below="@id/sim2_receivetime_content"
+	/>
+  </RelativeLayout>     
+    
+</LinearLayout>
+<LinearLayout 
+    android:id = "@+id/layout_dataflow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout_calltime"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_dataflow" 
+        android:textSize="20sp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+   />  
+   <RelativeLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >   
+    <TextView
+      android:id = "@+id/sim1_dataflow"
+      android:text="@string/sim1_dataflow" 
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim1_dataflow_content"
+	  android:text="@string/call_time_default" 
+	  android:layout_below="@id/sim1_dataflow"
+	  style="@style/CallTimeTextStyle"
+      />
+<Button 
+      android:id = "@+id/sim1_dataflow_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim1_dataflow"      
+      />
+  <TextView
+      android:id = "@+id/sim2_dataflow"
+      android:text="@string/sim2_dataflow"
+      android:layout_below="@id/sim1_dataflow_content"
+      style="@style/CallTimeTextStyle"
+      />   
+  <TextView
+      android:id = "@+id/sim2_dataflow_content"
+      android:text="@string/call_time_default"
+	  android:layout_below="@id/sim2_dataflow"
+	  style="@style/CallTimeTextStyle"
+	  />
+  <Button 
+      android:id = "@+id/sim2_dataflow_button"
+      style="@style/CallTimeButtonStyle"
+      android:layout_alignParentRight="true"
+      android:layout_alignTop="@id/sim2_dataflow"      
+      />
+  <View  
+        android:id = "@+id/segmentation3"
+        android:layout_width="fill_parent"  
+    	android:layout_height="1px" 
+   		android:background="?android:attr/listDivider"  
+   		android:layout_below="@id/sim2_dataflow_content"
+	/>
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout_dataflow"
+    >
+    
+    
+    
+    
+</LinearLayout>
+
+
+
+</RelativeLayout>
