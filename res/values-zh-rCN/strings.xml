@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">通话时间</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="layout_calltime">通话时间</string>
+    <string name="sim1_calltime">"卡1 拨打时间(分钟):"</string>
+    <string name="sim1_receivetime">"卡1 接听时间(分钟):"</string>
+    <string name="sim2_calltime">"卡2 拨打时间(分钟):"</string>
+    <string name="sim2_receivetime">"卡2 接听时间(分钟):"</string>
+    <string name="call_time_default">"0"</string>
+    <string name="call_time_mins">"分钟"</string>
+    <string name="layout_dataflow">"数据流量"</string>
+    <string name="sim1_dataflow">"卡1 数据流量(M):"</string>
+    <string name="sim2_dataflow">"卡2 数据流量(M):"</string>
+    <string name="content_detail">"详细"</string>
+</resources>
